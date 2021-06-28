@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% load static %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+*{
+  margin:0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-shadow: border-box;
+  
+
+}
+
+.header{
+  background-color:#f5b942;
+  height:50px;
+  width: 100%;
+  
+  top: 0;
+}
+.social-icons{
+  float: right;
+  margin-right: 5%;
+}
+.top-icons{
+  padding: 14px 15px;
+}
+.top-icons a{
+  padding:13px;
+  color: white;
+}
+.top-icons a:hover{
+  color: #000000;
+}
+
+
+/*--
+nav{
+  padding: px;
+  background: #ffffff;
+  height: 60px;
+  width:100%;
+  
+}*/
+
+nav ul{
+  float: right;
+  margin-right: 250px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin:0 5px;
+}
+nav ul li a{
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  color: orange;
+  transition:0.5s;
+}
+
+/* Style the header */
+
+</style>
+</head>
+<body>
+  
+
+ <div class="header">
+ <div class="social-icons">
+   <div class="top-icons">
+     <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+               <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    
+
+   </div>
+ </div>
+
+</div>
+
+  <nav class="navbar navbar-default" >
+
+  
+   <ul class = "topnav">
+     <li><a href="{% url 'core:index'%}">Home</a></li>
+     <li><a href="#">About</a></li>
+     <li><a href="#">Contact</a></li>
+     <li><a href="{% url 'core:admin_login' %}">Manage post</a></li>
+
+   </ul>
+ </nav>
+
+</body>
+</html>

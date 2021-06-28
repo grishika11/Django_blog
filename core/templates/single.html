@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<div class="area" style="padding-top: 0;padding-right: 15%;padding-left: 15%;">
+<div class = "container">
+	<div class = "row">
+		<div class = "col-12 pt-5">
+			<img class='card-img-top' src="{{post.image.url}}" alt='image' style="width: 100%;height: 400px;">
+			<u><h2 style="text-align: center;" class = "pt-5">{{post.title}}</h2><br></u>
+			<p>{{post.excerpt|linebreaks}}</p>			
+		</div>
+	</div>
+</div>
+</div>
+
+{% endblock %}
